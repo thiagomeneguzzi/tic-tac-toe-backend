@@ -1,6 +1,6 @@
 FROM node:18
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
 COPY package*.json ./
 
@@ -10,4 +10,4 @@ COPY . .
 
 RUN npm run build
 
-CMD [ "npm", "run", "start:dev" ]
+CMD [ "npm", "run", "start:prod" ]
